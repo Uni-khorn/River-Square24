@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | River Square 24</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/RS-rm.png" alt="River Square 24 Logo" class="logo-image" width="120px">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="menu.html" class="nav-link active">Menu <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#starters"><i class="fas fa-utensils"></i> Starters</a>
+                            <a href="#main-course"><i class="fas fa-drumstick-bite"></i> Main Course</a>
+                            <a href="#desserts"><i class="fas fa-ice-cream"></i> Desserts</a>
+                            <a href="#drinks"><i class="fas fa-wine-glass-alt"></i> Drinks</a>
+                            <a href="#specials"><i class="fas fa-star"></i> Specials</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#reservation" class="nav-link">Reservation</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="index.html#reservation" class="btn-reservation">Book Table</a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="container">
+            <div class="menu-hero-content">
+                <h1>Our Complete Menu</h1>
+                <p>Explore our extensive selection of Khmer-Western fusion dishes, carefully crafted by our executive chef using the finest local ingredients.</p>
+                
+                <div class="menu-filters">
+                    <a href="#starters" class="filter-btn active">Starters</a>
+                    <a href="#main-course" class="filter-btn">Main Course</a>
+                    <a href="#desserts" class="filter-btn">Desserts</a>
+                    <a href="#drinks" class="filter-btn">Drinks</a>
+                    <a href="#specials" class="filter-btn">Specials</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Sections -->
+    <div class="menu-container">
+        <!-- Starters -->
+        <section id="starters" class="menu-section">
+            <div class="container">
+                <div class="menu-section-header">
+                    <h2>Starters & Appetizers</h2>
+                    <p>Begin your culinary journey with our exquisite selection of starters</p>
+                </div>
+                
+                <div class="menu-items-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Khmer Fusion Spring Rolls</h3>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p class="description">Crispy rice paper rolls filled with fresh herbs, local vegetables, and choice of chicken, shrimp, or tofu</p>
+                        <div class="tags">
+                            <span class="tag vegetarian">Vegetarian Option</span>
+                            <span class="tag spicy">Spicy</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crispy Morning Glory</h3>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <p class="description">Lightly battered morning glory leaves served with sweet chili dipping sauce</p>
+                        <div class="tags">
+                            <span class="tag vegetarian">Vegetarian</span>
+                            <span class="tag gluten-free">Gluten Free</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Prawn Lemongrass Skewers</h3>
+                            <span class="price">$16.99</span>
+                        </div>
+                        <p class="description">Grilled tiger prawns marinated in lemongrass, garlic, and kaffir lime leaves</p>
+                        <div class="tags">
+                            <span class="tag seafood">Seafood</span>
+                            <span class="tag chef">Chef's Special</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Beef Lok Lak Bites</h3>
+                            <span class="price">$15.50</span>
+                        </div>
+                        <p class="description">Miniature version of the classic Cambodian dish, served with pepper lime sauce</p>
+                        <div class="tags">
+                            <span class="tag meat">Meat</span>
+                            <span class="tag popular">Popular</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coconut Soup Sampler</h3>
+                            <span class="price">$13.99</span>
+                        </div>
+                        <p class="description">Three small bowls featuring our signature soups: Tom Yum, Chicken Coconut, and Pumpkin</p>
+                        <div class="tags">
+                            <span class="tag gluten-free">Gluten Free</span>
+                            <span class="tag soup">Soup</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Stuffed Mushrooms</h3>
+                            <span class="price">$11.99</span>
+                        </div>
+                        <p class="description">Button mushrooms stuffed with herbs, cheese, and breadcrumbs</p>
+                        <div class="tags">
+                            <span class="tag vegetarian">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Course -->
+        <section id="main-course" class="menu-section">
+            <div class="container">
+                <div class="menu-section-header">
+                    <h2>Main Course</h2>
+                    <p>Signature dishes that showcase the best of Khmer-Western fusion cuisine</p>
+                </div>
+                
+                <div class="menu-items-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-item highlighted">
+                        <div class="highlight-badge">Signature Dish</div>
+                        <div class="menu-item-header">
+                            <h3>Royal Amok Fish</h3>
+                            <span class="price">$28.50</span>
+                        </div>
+                        <p class="description">Traditional Khmer fish curry steamed in banana leaves with coconut milk, turmeric, and kroeung paste</p>
+                        <div class="tags">
+                            <span class="tag seafood">Seafood</span>
+                            <span class="tag gluten-free">Gluten Free</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Angkor Beef Steak</h3>
+                            <span class="price">$32.99</span>
+                        </div>
+                        <p class="description">Grilled tenderloin with Kampot pepper sauce, served with roasted vegetables and truffle mashed potatoes</p>
+                        <div class="tags">
+                            <span class="tag meat">Meat</span>
+                            <span class="tag premium">Premium</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Vegetarian Khmer Curry</h3>
+                            <span class="price">$22.99</span>
+                        </div>
+                        <p class="description">A rich coconut curry with seasonal vegetables, tofu, and aromatic herbs</p>
+                        <div class="tags">
+                            <span class="tag vegetarian">Vegetarian</span>
+                            <span class="tag vegan">Vegan Option</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Grilled Mekong Fish</h3>
+                            <span class="price">$26.50</span>
+                        </div>
+                        <p class="description">Whole grilled fish from the Mekong River, served with tamarind sauce and fresh herbs</p>
+                        <div class="tags">
+                            <span class="tag seafood">Seafood</span>
+                            <span class="tag local">Local Specialty</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Chicken Kroeung Pasta</h3>
+                            <span class="price">$24.99</span>
+                        </div>
+                        <p class="description">Fusion pasta with chicken in traditional kroeung sauce, cherry tomatoes, and basil</p>
+                        <div class="tags">
+                            <span class="tag fusion">Fusion</span>
+                            <span class="tag popular">Popular</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pork Ribs with Palm Sugar Glaze</h3>
+                            <span class="price">$29.99</span>
+                        </div>
+                        <p class="description">Slow-cooked pork ribs glazed with Cambodian palm sugar and spices</p>
+                        <div class="tags">
+                            <span class="tag meat">Meat</span>
+                            <span class="tag chef">Chef's Special</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 7 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Seafood Hot Pot</h3>
+                            <span class="price">$34.99</span>
+                        </div>
+                        <p class="description">Assorted seafood simmered in a spicy lemongrass broth with vegetables</p>
+                        <div class="tags">
+                            <span class="tag seafood">Seafood</span>
+                            <span class="tag spicy">Spicy</span>
+                            <span class="tag sharing">Sharing Dish</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 8 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Duck Confit with Tamarind</h3>
+                            <span class="price">$31.50</span>
+                        </div>
+                        <p class="description">French-style duck confit with sweet and sour tamarind reduction</p>
+                        <div class="tags">
+                            <span class="tag meat">Meat</span>
+                            <span class="tag premium">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts -->
+        <section id="desserts" class="menu-section">
+            <div class="container">
+                <div class="menu-section-header">
+                    <h2>Desserts</h2>
+                    <p>Sweet endings to complete your dining experience</p>
+                </div>
+                
+                <div class="menu-items-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mango Sticky Rice Delight</h3>
+                            <span class="price">$12.99</span>
+                        </div>
+                        <p class="description">Sweet mango with coconut sticky rice, toasted sesame seeds, and coconut cream</p>
+                        <div class="tags">
+                            <span class="tag seasonal">Seasonal</span>
+                            <span class="tag traditional">Traditional</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Palm Sugar Crème Brûlée</h3>
+                            <span class="price">$10.50</span>
+                        </div>
+                        <p class="description">Classic French dessert with a Cambodian twist using local palm sugar</p>
+                        <div class="tags">
+                            <span class="tag fusion">Fusion</span>
+                            <span class="tag popular">Popular</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Banana Fritters with Ice Cream</h3>
+                            <span class="price">$11.99</span>
+                        </div>
+                        <p class="description">Crispy banana fritters served with vanilla ice cream and palm sugar syrup</p>
+                        <div class="tags">
+                            <span class="tag traditional">Traditional</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="price">$13.50</span>
+                        </div>
+                        <p class="description">Warm chocolate cake with a molten center, served with vanilla bean ice cream</p>
+                        <div class="tags">
+                            <span class="tag dessert">Dessert</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tropical Fruit Platter</h3>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p class="description">Seasonal tropical fruits with coconut sorbet and passion fruit coulis</p>
+                        <div class="tags">
+                            <span class="tag vegan">Vegan</span>
+                            <span class="tag gluten-free">Gluten Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks -->
+        <section id="drinks" class="menu-section">
+            <div class="container">
+                <div class="menu-section-header">
+                    <h2>Drinks & Beverages</h2>
+                    <p>Refresh your palate with our selection of beverages</p>
+                </div>
+                
+                <div class="drinks-categories">
+                    <!-- Cocktails -->
+                    <div class="drinks-category">
+                        <h3>Signature Cocktails</h3>
+                        <div class="drinks-list">
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Angkor Sunrise</h4>
+                                    <p>Vodka, mango juice, lime, grenadine</p>
+                                </div>
+                                <span class="price">$12.50</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Mekong Mule</h4>
+                                    <p>Ginger beer, vodka, lime, mint</p>
+                                </div>
+                                <span class="price">$11.99</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Royal Palace Martini</h4>
+                                    <p>Gin, lemongrass infusion, kaffir lime</p>
+                                </div>
+                                <span class="price">$13.50</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Kampot Pepper Margarita</h4>
+                                    <p>Tequila, lime, Kampot pepper syrup</p>
+                                </div>
+                                <span class="price">$12.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Non-Alcoholic -->
+                    <div class="drinks-category">
+                        <h3>Non-Alcoholic</h3>
+                        <div class="drinks-list">
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Fresh Sugar Cane Juice</h4>
+                                    <p>Freshly pressed with lime and mint</p>
+                                </div>
+                                <span class="price">$6.50</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Lemongrass Iced Tea</h4>
+                                    <p>Home-brewed with fresh lemongrass</p>
+                                </div>
+                                <span class="price">$5.99</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Coconut Water</h4>
+                                    <p>Fresh young coconut, served chilled</p>
+                                </div>
+                                <span class="price">$7.50</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Tropical Smoothie</h4>
+                                    <p>Mango, pineapple, banana, and coconut milk</p>
+                                </div>
+                                <span class="price">$8.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Wines -->
+                    <div class="drinks-category">
+                        <h3>Wine Selection</h3>
+                        <div class="drinks-list">
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>House Red (Glass)</h4>
+                                    <p>Cambodian grown, medium bodied</p>
+                                </div>
+                                <span class="price">$8.50</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>House White (Glass)</h4>
+                                    <p>Crisp and refreshing</p>
+                                </div>
+                                <span class="price">$8.50</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Premium Red (Bottle)</h4>
+                                    <p>Imported French Bordeaux</p>
+                                </div>
+                                <span class="price">$45.00</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Premium White (Bottle)</h4>
+                                    <p>New Zealand Sauvignon Blanc</p>
+                                </div>
+                                <span class="price">$42.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specials -->
+        <section id="specials" class="menu-section">
+            <div class="container">
+                <div class="menu-section-header">
+                    <h2>Today's Specials</h2>
+                    <p>Unique dishes available for a limited time</p>
+                </div>
+                
+                <div class="specials-grid">
+                    <div class="special-card">
+                        <div class="special-badge">Limited Time</div>
+                        <div class="special-content">
+                            <h3>Grilled Lobster with Kampot Pepper</h3>
+                            <p>Fresh lobster grilled to perfection with Kampot pepper butter sauce, served with grilled vegetables and herb rice</p>
+                            <div class="special-price">
+                                <span class="original-price">$45.99</span>
+                                <span class="special-price">$38.99</span>
+                            </div>
+                            <div class="tags">
+                                <span class="tag seafood">Seafood</span>
+                                <span class="tag premium">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="special-card">
+                        <div class="special-badge">Chef's Creation</div>
+                        <div class="special-content">
+                            <h3>Wagyu Beef Rendang</h3>
+                            <p>Premium Wagyu beef slow-cooked in traditional Indonesian spices with coconut milk</p>
+                            <div class="special-price">
+                                <span class="original-price">$48.99</span>
+                                <span class="special-price">$42.99</span>
+                            </div>
+                            <div class="tags">
+                                <span class="tag meat">Meat</span>
+                                <span class="tag spicy">Spicy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="special-card">
+                        <div class="special-badge">Weekend Only</div>
+                        <div class="special-content">
+                            <h3>Seafood Platter for Two</h3>
+                            <p>Assortment of grilled seafood including prawns, squid, fish, and scallops with three dipping sauces</p>
+                            <div class="special-price">
+                                <span class="original-price">$65.99</span>
+                                <span class="special-price">$55.99</span>
+                            </div>
+                            <div class="tags">
+                                <span class="tag seafood">Seafood</span>
+                                <span class="tag sharing">Sharing Dish</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="menu-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Our Culinary Excellence?</h2>
+                <p>Book your table now for an unforgettable dining experience at River Square 24</p>
+                <div class="cta-buttons">
+                    <a href="index.html#reservation" class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Book a Table</span>
+                    </a>
+                    <a href="index.html#contact" class="btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Us Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/RS-rm.png" alt="River Square 24 Logo" class="logo-image" width="120px">
+                    </a>
+                    <p class="footer-description">
+                        Experience the perfect fusion of Khmer tradition and modern culinary excellence in the heart of Phnom Penh.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#reservation">Reservation</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h5>Stay Updated</h5>
+                    <p>Subscribe to our newsletter for updates on special events and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 River Square 24. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for food enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="menu-script.js"></script>
+</body>
+</html>
