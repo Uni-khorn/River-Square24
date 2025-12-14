@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Square 24 | Premium Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                   <img src="assets/RS-rm.png" alt="River Square 24 Logo" class="logo-image" width="120px">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="menu.html" class="nav-link">Menu <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="menu.html#starters"><i class="fas fa-utensils"></i> Starters</a>
+                            <a href="menu.html#main-course"><i class="fas fa-drumstick-bite"></i> Main Course</a>
+                            <a href="menu.html#desserts"><i class="fas fa-ice-cream"></i> Desserts</a>
+                            <a href="menu.html#drinks"><i class="fas fa-wine-glass-alt"></i> Drinks</a>
+                        </div>
+                    </li>
+                    <li><a href="#reservation" class="nav-link">Reservation</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#reservation" class="btn-reservation">Book Table</a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>kHoRn-2026</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="line-1">Experience Culinary</span>
+                    <span class="line-2">Excellence at</span>
+                    <span class="line-3">River Square <em>24</em></span>
+                </h1>
+                <p class="hero-description">
+                    Where Khmer tradition meets modern gastronomy. Discover innovative dishes crafted from the freshest local ingredients in an elegant setting overlooking the river.
+                </p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn-primary">
+                        <span>View Our Menu</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#reservation" class="btn-secondary">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Reserve Table</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Signature Dishes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100</span>
+                    <span class="stat-label">Seating Capacity</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Story</span>
+                <h2 class="section-title">A Fusion of Tradition & Innovation</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/RS-main-Pic.jpg" alt="Restaurant Interior" class="main-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-award"></i>
+                                <span>2026 Best Restaurant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-badge">
+                        <span>6+ Years</span>
+                        <span>Culinary Excellence</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Welcome to River Square 24</h3>
+                    <p>Located in the heart of Phnom Penh, just steps away from the Royal Palace and historic Raffles Hotel, River Square 24 offers a dining experience like no other. Our chef combines traditional Khmer recipes with contemporary techniques to create dishes that celebrate Cambodia's rich culinary heritage while embracing global influences.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Fresh Local Ingredients</h4>
+                                <p>We source our ingredients from local farms and markets, ensuring the freshest produce and sustainable seafood.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-chef"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Expert Chefs</h4>
+                                <p>Our culinary team, led by Executive Chef Sokha, brings over 15 years of international experience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-wine-bottle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Curated Wine Selection</h4>
+                                <p>An extensive collection of wines from around the world, perfectly paired with our menu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="menu.html" class="btn-outline">
+                        <span>Discover Our Menu</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu -->
+    <section class="section featured-menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Specialties</span>
+                <h2 class="section-title">Signature Dishes</h2>
+                <a href="menu.html" class="view-all">
+                    <span>View Full Menu</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="assets/Veg-Spring-roll.jpg" alt="Khmer Spring Rolls">
+                        <div class="menu-card-badge">Chef's Pick</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Khmer Fusion Spring Rolls</h3>
+                            <span class="price">$14.99</span>
+                        </div>
+                        <p>Crispy rolls with fresh herbs, vegetables, and choice of protein</p>
+                        <div class="menu-tags">
+                            <span class="tag vegetarian">Vegetarian Option</span>
+                            <span class="tag spicy">Spicy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://riversquare24.com/wp-content/uploads/2024/07/photo_19_2024-07-22_15-51-31-1024x587.jpg" alt="Royal Amok Fish">
+                        <div class="menu-card-badge popular">Most Popular</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Royal Amok Fish</h3>
+                            <span class="price">$28.50</span>
+                        </div>
+                        <p>Traditional fish curry steamed in banana leaves with coconut milk</p>
+                        <div class="menu-tags">
+                            <span class="tag seafood">Seafood</span>
+                            <span class="tag gluten-free">Gluten Free</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="https://riversquare24.com/wp-content/uploads/2024/07/photo_7_2024-07-26_14-45-06-1024x606.jpg" alt="Mango Sticky Rice">
+                        <div class="menu-card-badge seasonal">Seasonal</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Seasonal fresh fruit platter with lime</h3>
+                            <span class="price">$12.99</span>
+                        </div>
+                        <p>Sweet mango with coconut sticky rice and sesame seeds</p>
+                        <div class="menu-tags">
+                            <span class="tag dessert">Dessert</span>
+                            <span class="tag vegan">Vegan Option</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section reservation-section">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-info">
+                    <div class="section-header">
+                        <span class="section-subtitle">Reserve Your Table</span>
+                        <h2 class="section-title">Book a Memorable Dining Experience</h2>
+                    </div>
+                    
+                    <p>Secure your table at River Square 24 for an unforgettable culinary journey. We recommend booking in advance, especially for weekends and special occasions.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday: 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+855 23 999 888</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Special Events</h4>
+                                <p>Up to 100 guests capacity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reservation-form">
+                    <form id="reservationForm" method="POST" target="hidden_iframe">
+                        <!-- Don't add action here - JavaScript will handle it -->
+                        
+                        <!-- Your visible form fields -->
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Select guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7">7 People</option>
+                                    <option value="8">8+ People</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Reservation Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Reservation Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Select time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-submit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Confirm Reservation</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location" class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Find Us</span>
+                <h2 class="section-title">Visit Our Restaurant</h2>
+            </div>
+            
+            <div class="map-wrapper">
+                <div class="map-info">
+                    <div class="info-card large">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>River Square, Street 24<br>Phnom Penh, Cambodia</p>
+                            <a href="https://maps.app.goo.gl/wFkwpsKynvpG66y98" target="_blank" class="map-link">
+                                <i class="fas fa-directions"></i>
+                                <span>Get Directions</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="landmarks">
+                        <h5>Nearby Landmarks</h5>
+                        <ul>
+                            <li><i class="fas fa-walking"></i> Royal Palace - 5 min walk</li>
+                            <li><i class="fas fa-walking"></i> National Museum - 8 min walk</li>
+                            <li><i class="fas fa-walking"></i> Raffles Hotel - 3 min walk</li>
+                            <li><i class="fas fa-walking"></i> Sisowath Quay - 2 min walk</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="transport">
+                        <h5>Transportation</h5>
+                        <div class="transport-options">
+                            <span class="transport-option"><i class="fas fa-taxi"></i> Taxi</span>
+                            <span class="transport-option"><i class="fas fa-bus"></i> Bus Stop: 50m</span>
+                            <span class="transport-option"><i class="fas fa-parking"></i> Valet Parking</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div id="map">
+                        <!-- Google Map will be loaded here -->
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Interactive Map Loading...</p>
+                            <a href="https://maps.app.goo.gl/wFkwpsKynvpG66y98" target="_blank" class="btn-outline">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Open in Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+855 23 999 888</p>
+                            <p>+855 87 654 321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>reservations@riversquare24.com</p>
+                            <p>info@riversquare24.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Hours</h4>
+                            <p><strong>Monday - Sunday</strong></p>
+                            <p>11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contact-name">Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/RS-rm.png" alt="River Square 24 Logo" class="logo-image" width="120px">
+                    </a>
+                    <p class="footer-description">
+                        Experience the perfect fusion of Khmer tradition and modern culinary excellence in the heart of Phnom Penh.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h5>Stay Updated</h5>
+                    <p>Subscribe to our newsletter for updates on special events and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 River Square 24. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for food enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
