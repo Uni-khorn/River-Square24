@@ -589,3 +589,54 @@ style.textContent = `
     .menu-item:nth-child(8) { transition-delay: 0.8s; }
 `;
 document.head.appendChild(style);
+
+// Simple Full Image Ad
+document.addEventListener('DOMContentLoaded', function() {
+    const adOverlay = document.getElementById('adOverlay');
+    const imageAd = document.getElementById('imageAd');
+    const closeImageAd = document.getElementById('closeImageAd');
+    
+    // Show ad after 1 second
+    setTimeout(() => {
+        adOverlay.classList.add('show');
+        
+        // Auto-close after 5 seconds
+        setTimeout(() => {
+            if (adOverlay.classList.contains('show')) {
+                closeImageAdFunc();
+            }
+        }, 4000);
+    }, 1000);
+    
+    // Close ad on button click
+    closeImageAd.addEventListener('click', closeImageAdFunc);
+    
+    // Close ad on overlay click (outside image)
+    adOverlay.addEventListener('click', function(e) {
+        if (e.target === adOverlay) {
+            closeImageAdFunc();
+        }
+    });
+    
+    // Close ad on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && adOverlay.classList.contains('show')) {
+            closeImageAdFunc();
+        }
+    });
+    
+    // Close function
+    function closeImageAdFunc() {
+        imageAd.style.animation = 'scaleOut 0.3s ease forwards';
+        
+        setTimeout(() => {
+            adOverlay.classList.remove('show');
+            imageAd.style.animation = '';
+            
+            // Remove after animation complete
+            setTimeout(() => {
+                adOverlay.remove();
+            }, 300);
+        }, 300);
+    }
+});
